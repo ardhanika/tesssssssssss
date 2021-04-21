@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "659568674618",
+    "project_id": "ardhanikafirebase",
+    "storage_bucket": "ardhanikafirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659568674618:android:cb20df7dde12a28492b203",
+        "android_client_info": {
+          "package_name": "com.example.praktikum_9"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659568674618-4lnujniiiegodhq2ivru8edv3n7vjrr2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.praktikum_9",
+            "certificate_hash": "e0ff2a06b5540df14e045edbd8b9b3c5c757403c"
+          }
+        },
+        {
+          "client_id": "659568674618-4hg7bgdgrmb9f36t5e1n416vnu58qr2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_w3w5Pv5M8Q0x2QFVzBkStgOltQ22uDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659568674618-4hg7bgdgrmb9f36t5e1n416vnu58qr2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
