@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:praktikum_9/pages/sign_in.dart';
 import 'package:praktikum_9/pages/first_screen.dart';
+import 'package:praktikum_9/pages/login_password.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -21,6 +22,7 @@ class _LoginPageState extends State<LoginPage> {
               FlutterLogo(size: 150),
               SizedBox(height: 50),
               _signInButton(),
+              _signInButtonWithPassword(),
             ],
           ),
         ),
@@ -62,6 +64,44 @@ class _LoginPageState extends State<LoginPage> {
               padding: const EdgeInsets.only(left: 10),
               child: Text(
                 'Sign in with Google',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.grey,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _signInButtonWithPassword() {
+    return OutlineButton(
+      splashColor: Colors.grey,
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => EmailPasswordForm()),
+        );
+      },
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+      highlightElevation: 0,
+      borderSide: BorderSide(color: Colors.grey),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Image.network(
+              'https://www.nicepng.com/png/full/380-3804499_firebase-logo-google-logo-firebase-firebase-png.png',
+              height: 35.0,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: Text(
+                'Sign in with Firebase',
                 style: TextStyle(
                   fontSize: 20,
                   color: Colors.grey,
