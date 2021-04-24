@@ -1,6 +1,5 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:praktikum_9/pages/sign_in.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:praktikum_9/pages/first_screen.dart';
 
 class EmailPasswordForm extends StatefulWidget {
@@ -65,8 +64,6 @@ class EmailPasswordFormState extends State<EmailPasswordForm> {
                 onPressed: () {
                   auth.createUserWithEmailAndPassword(
                       email: _email, password: _password);
-                  Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(builder: (context) => FirstScreen()));
                 },
               ),
             ],
