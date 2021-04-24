@@ -47,13 +47,23 @@ class EmailPasswordFormState extends State<EmailPasswordForm> {
             ),
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               RaisedButton(
                 color: Theme.of(context).accentColor,
-                child: Text('Sign'),
+                child: Text('Sign In'),
                 onPressed: () {
                   auth.signInWithEmailAndPassword(
+                      email: _email, password: _password);
+                  Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => FirstScreen()));
+                },
+              ),
+              RaisedButton(
+                color: Theme.of(context).accentColor,
+                child: Text('Sign Up'),
+                onPressed: () {
+                  auth.createUserWithEmailAndPassword(
                       email: _email, password: _password);
                   Navigator.of(context).pushReplacement(
                       MaterialPageRoute(builder: (context) => FirstScreen()));
